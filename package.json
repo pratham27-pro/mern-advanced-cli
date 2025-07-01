@@ -1,12 +1,26 @@
 {
-  "name": "mern-advanced",
+  "name": "mern-advanced-cli",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "Pratham Jain",
-  "type": "module",
-  "main": "index.js",
+  "description": "Advanced MERN stack CLI with production-ready structure",
+  "main": "lib/cli.js",
+  "bin": {
+    "mern-advanced": "./bin/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["mern", "cli", "mongodb", "express", "react", "nodejs"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.0.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.4",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "jest": "^28.0.0"
   }
 }
