@@ -6,19 +6,33 @@
   "bin": {
     "mern-advanced": "./bin/index.js"
   },
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test"
+    "test": "node test/cli.test.js",
+    "test:manual": "node test/cli.test.js",
+    "prepare": "echo 'Preparing package...'",
+    "prepublishOnly": "npm run test:manual",
+    "pub": "npm version patch && npm publish"
   },
-  "keywords": ["mern", "cli", "mongodb", "express", "react", "nodejs"],
-  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratham27-pro/mern-advanced-cli.git"
+  },
+  "keywords": [
+    "mern",
+    "cli",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs"
+  ],
+  "author": "Pratham Jain",
   "license": "MIT",
   "dependencies": {
-    "commander": "^9.0.0",
     "chalk": "^4.1.2",
-    "inquirer": "^8.2.4",
-    "fs-extra": "^10.1.0"
+    "commander": "^9.0.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
     "jest": "^28.0.0"
