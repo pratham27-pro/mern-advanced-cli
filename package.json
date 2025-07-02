@@ -10,8 +10,6 @@
   "scripts": {
     "test": "node test/cli.test.js",
     "test:manual": "node test/cli.test.js",
-    "prepare": "echo 'Preparing package...'",
-    "prepublishOnly": "npm run test:manual",
     "pub": "npm version patch && npm publish"
   },
   "repository": {
