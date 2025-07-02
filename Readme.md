@@ -63,44 +63,44 @@ npm run dev
 ## 🏗 Project Structure
 my-app/
 ├── backend/
-│   ├── package.json
-│   ├── .env.example
-│   └── src/
-│       ├── app.js
-│       ├── server.js
-│       ├── constants.js
-│       ├── config/
-│       ├── controllers/
-│       ├── db/
-│       ├── middlewares/
-│       ├── models/
-│       ├── routes/
-│       ├── services/
-│       └── utils/
+│ ├── package.json
+│ ├── .env.example
+│ └── src/
+│ ├── app.js
+│ ├── server.js
+│ ├── constants.js
+│ ├── config/
+│ ├── controllers/
+│ ├── db/
+│ ├── middlewares/
+│ ├── models/
+│ ├── routes/
+│ ├── services/
+│ └── utils/
 └── frontend/
-    ├── package.json
-    ├── vite.config.js
-    ├── tailwind.config.js
-    ├── postcss.config.js
-    ├── index.html
-    └── src/
-        ├── main.jsx
-        ├── App.jsx
-        ├── index.css
-        ├── components/
-        ├── context/
-        ├── hooks/
-        ├── pages/
-        ├── services/
-        └── utils/
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── index.html
+└── src/
+├── main.jsx
+├── App.jsx
+├── index.css
+├── components/
+├── context/
+├── hooks/
+├── pages/
+├── services/
+└── utils/
 
 
 ---
 
 ## 🔒 Authentication Workflow
 
-- **Signup:** `/api/auth/register` (backend) — creates user, hashes password, returns JWT
-- **Login:** `/api/auth/login` (backend) — verifies credentials, returns JWT
+- **Signup:** `/api/auth/signup` (backend) — creates user, hashes password, returns JWT
+- **Login:** `/api/auth/signin` (backend) — verifies credentials, returns JWT
 - **Protected Routes:** Auth middleware verifies JWT
 - **Frontend:** AuthContext and hooks manage login state, store token in localStorage
 
@@ -170,6 +170,15 @@ my-app/
 ## 📄 License
 
 MIT
+
+---
+
+## 👤 Author & Credits
+
+Created and maintained by [Pratham Jain](https://linkedin.com/in/pratham-jain-46645b325/)  
+GitHub: [Pratham Jain](https://github.com/pratham27-pro)
+
+If you use this CLI or find it helpful, feel free to connect or reach out!
 
 ---
 
