@@ -1,6 +1,6 @@
 {
   "name": "mern-advanced-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Advanced MERN stack CLI with production-ready structure",
   "main": "lib/cli.js",
   "bin": {

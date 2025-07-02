@@ -61,6 +61,7 @@ npm run dev
 ---
 
 ## 🏗 Project Structure
+```
 my-app/
 ├── backend/
 │ ├── package.json
@@ -93,7 +94,7 @@ my-app/
 ├── pages/
 ├── services/
 └── utils/
-
+```
 
 ---
 
